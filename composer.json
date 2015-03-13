@@ -1,0 +1,23 @@
+{
+    "name": "c0710204/tv-calendar-api",
+    "license": "MIT",
+	"description":"",
+    "authors": [
+        {
+            "name": "顾翔",
+            "email": "c0710204@gmail.com"
+        }
+    ],
+
+    "type": "library",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TVCalendarAPI\\": "TVCalendarAPI/"
+        }
+    }
+}
