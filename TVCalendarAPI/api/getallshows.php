@@ -8,6 +8,9 @@
 *
 *	@descripetion: get all TV shows
 */
+namespace TVCalendarAPI\api;
+function getallshows()
+{
 
 //*/
 	$ch = curl_init("http://www.pogdesign.co.uk/cat/showselect.php");
@@ -28,10 +31,11 @@
 		}
 	}
 
-	echo json_encode(array(
+	return json_encode(array(
 		"status" => $flag,
 		"msg" => $msg,
 		"data" => $data,
 	));
+}
 //*/
 ?>

@@ -8,7 +8,9 @@
 *
 *	@descripetion: get my TV shows
 */
-
+namespace TVCalendarAPI\api;
+function getmyshows()
+{
 	$post_data = array(
 		'username' => $_GET['username'],
 		'password' => $_GET['password'],
@@ -45,10 +47,11 @@
 		}
 	}
 
-	echo json_encode(array(
+	return json_encode(array(
 		"status" => $flag,
 		"msg" => $msg,
 		"data" => $data,
 	));
+}
 //*/
 ?>

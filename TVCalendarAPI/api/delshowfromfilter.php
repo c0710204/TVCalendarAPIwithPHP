@@ -8,7 +8,9 @@
 *
 *	@descripetion: del TV show from filter
 */
-
+namespace TVCalendarAPI\api;
+function delshowfromfilter()
+{
 	$post_data = array(
 		'username' => $_GET['username'],
 		'password' => $_GET['password'],
@@ -49,9 +51,10 @@
 	}
 	curl_close($add);
 
-	echo json_encode(array(
+	return json_encode(array(
 		"status" => $flag,
 		"msg" => $msg,
 	));
+}
 //*/
 ?>

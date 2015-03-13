@@ -8,7 +8,9 @@
 *
 *	@descripetion: register account
 */
-
+namespace TVCalendarAPI\api;
+function registeraccount()
+{
 	$post_data = array(
 		'email' => $_GET['email'],
 		'password' => $_GET['password'],
@@ -34,9 +36,10 @@
 	}
 	curl_close($ch);
 
-	echo json_encode(array(
+	return json_encode(array(
 		"status" => $flag,
 		"msg" => $msg,
 	));
+}
 //*/
 ?>
