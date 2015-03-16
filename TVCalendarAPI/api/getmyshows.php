@@ -9,7 +9,8 @@
 *	@descripetion: get my TV shows
 */
 namespace TVCalendarAPI\api;
-function getmyshows()
+class myshows(){
+function get()
 {
 	$post_data = array(
 		'username' => $_GET['username'],
@@ -52,6 +53,4 @@ function getmyshows()
 		"msg" => $msg,
 		"data" => $data,
 	));
-}
-//*/
-?>
+}}

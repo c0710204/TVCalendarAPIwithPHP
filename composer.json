@@ -16,8 +16,9 @@
         "ext-json": "*"
     },
     "autoload": {
-        "classmap": [
-            "TVCalendarAPI/"]
         
+        "psr-4": {
+            "TVCalendarAPI\\": "TVCalendarAPI/"
+        }
     }
 }

@@ -21,7 +21,8 @@
 *		}
 */
 namespace TVCalendarAPI\api;
-function getcalendar()
+class calendar(){
+function get()
 {
 	$post_data = array(
 		'username' => $_GET['username'],
@@ -92,6 +93,4 @@ function getcalendar()
 		"msg" => $msg,
 		"data" => $data,
 	));
-}
-//*/
-?>
+}}
